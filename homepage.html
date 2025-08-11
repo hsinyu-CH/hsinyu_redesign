@@ -11,48 +11,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./csss/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo"><a href="">
-                    <img src="./img/L.png" alt="">
-                </a></div>
-            <div class="action-list">
+            <div class="nav-list">
+                <div class="logo">
+                    <a href="">
+                        <img src="./img/L.png" alt="">
+                    </a>
+                </div>
                 <ul>
-                    <li>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="">我的片單</a></li>
                     <li><a href="">會員中心</a></li>
                 </ul>
             </div>
-            <div class="action-link">
+
+            <div class="nav-link">
                 <ul>
-                    <li><a href="">公視推薦</a></li>
-                    <li><a href="">戲劇影集</a></li>
-                    <li><a href="">電影視界</a></li>
-                    <li><a href="">熱播排行</a></li>
-                    <li><a href="">兒童專區</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            公視推薦
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">生活與藝術</a></li>
+                            <li><a class="dropdown-item" href="#">時事與紀錄片</a></li>
+                            <li><a class="dropdown-item" href="#">公視劇展</a></li>
+                            <li><a class="dropdown-item" href="#">公視創新劇展</a></li>
+                            <li><a class="dropdown-item" href="#">公視創新短片</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            戲劇影集
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">追劇生活</a></li>
+                            <li><a class="dropdown-item" href="#">經典動畫</a></li>
+                            <li><a class="dropdown-item" href="#">短片魅力</a></li>
+                            <li><a class="dropdown-item" href="#">紀錄片</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            電影視界
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">影展大賞</a></li>
+                            <li><a class="dropdown-item" href="#">華語精選</a></li>
+                            <li><a class="dropdown-item" href="#">國際好片</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            熱播排行
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">戲劇影集</a></li>
+                            <li><a class="dropdown-item" href="#">公視原創</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            兒童專區
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">學齡前推薦</a></li>
+                            <li><a class="dropdown-item" href="#">知識小宇宙</a></li>
+                            <li><a class="dropdown-item" href="#">運動小健將</a></li>
+                            <li><a class="dropdown-item" href="#">藝術美學</a></li>
+                            <li><a class="dropdown-item" href="#">教育成長</a></li>
+                            <li><a class="dropdown-item" href="#">勇闖自然</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="">直播專區</a></li>
                     <li><a href="">即將推出</a></li>
+
                 </ul>
             </div>
         </nav>
     </header>
-    <section class="hero">
-        <img src="" alt="推薦節目圖片">
-        <div class="hero-text">
-            <h1>推薦節目</h1>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h2>推薦節目</h2>
             <p>探索最新的影集與精彩節目資訊，進入全新視界</p>
-            <div class="hero-buttons">
-                <button>加入收藏</button>
+            <div class="banner-buttons">
+                <button class="secondary">加入收藏</button>
                 <button class="primary">立即前往</button>
             </div>
         </div>
     </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

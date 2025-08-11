@@ -1,0 +1,14 @@
+// 使用 @import  指令後接檔案名稱，把該檔內容引用進來
+// 這樣這個檔案中就可以使用 _mixin.sass 中的 mixin 了
+@mixin hnpx($n)
+    .h#{$n}px
+        height: #{$n}px
+@mixin wnpx($n)
+    .w#{$n}px
+        width: #{$n}px
+@mixin bgc($name, $color)
+    .#{$name}
+        background-color: $color
+@mixin color($name, $color)
+    .#{$name}
+        color: $color

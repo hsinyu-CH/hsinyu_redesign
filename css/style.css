@@ -1,16 +1,122 @@
 /* 電腦優先 */
 
 * {
-    font-family: 'Noto Sans TC', sans-serif;
-    color: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    background-color: #070D59;
-    padding: 0 20px;
-    width: 100%;
-    height: 100px;
+:root {
+    font-size: 16px;
 }
+
+body {
+    background-color: #070D59;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #fff;
+}
+
+/* 導覽列 */
+
+header {
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-list ul {
+    gap: 30px;
+}
+
+.nav-link {
+    width: 100%;
+}
+
+.nav-link ul {
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(/img/與惡的距離.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.banner-text p {
+    padding-bottom: 20px;
+}
+
+.secondary {
+    margin-right: 10px;
+    font-size: 1.25rem;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px solid #070D59;
+    color: #070D59;
+}
+
+.secondary:hover {
+    background-color: #5269A5;
+    color: #fff;
+}
+
+.primary {
+    font-size: 1.25rem;
+    padding: 10px 18px;
+    color: #FFF;
+    background: linear-gradient(to right top, #014cd3, #2f4bce, #424bc9, #4f4bc4, #5a4bbf, #7048bb, #8246b6, #9243b0, #ad3da6, #c3379a, #d5358d, #e3387e);
+    border: none;
+    border-radius: 10px;
+
+}
+
+.primary:hover {
+    background-image: linear-gradient(to left bottom, #014cd3, #2f4bce, #424bc9, #4f4bc4, #5a4bbf, #7048bb, #8246b6, #9243b0, #ad3da6, #c3379a, #d5358d, #e3387e);
+}
+
+/* card */
