@@ -16,13 +16,20 @@ body {
     color: #fff;
 }
 
+.container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
 /* 導覽列 */
 
 header {
     height: 100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 50px;
 }
+
 
 .navbar {
     padding: 0;
@@ -77,9 +84,8 @@ ul {
 .banner-text {
     position: absolute;
     top: 50%;
-    left: 50px;
     transform: translateY(-50%);
-    font-weight: bold;
+    left: 120px;
 }
 
 .banner-text h2 {
@@ -88,8 +94,10 @@ ul {
 }
 
 .banner-text p {
+    font-weight: bold;
     padding-bottom: 20px;
 }
+
 
 .secondary {
     margin-right: 10px;
