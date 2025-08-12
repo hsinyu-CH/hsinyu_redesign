@@ -68,7 +68,7 @@ ul {
     justify-content: start;
     align-items: center;
     gap: 30px;
-    padding: 0;
+    /* padding: 0; */
 }
 
 /* Banner */
@@ -76,7 +76,7 @@ ul {
     position: relative;
     width: 100%;
     height: 600px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(/img/與惡的距離.jpg) no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(/img/banner.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -128,3 +128,39 @@ ul {
 }
 
 /* card */
+
+.btn {
+    color: #fff;
+    border: none;
+}
+
+
+/* 卡片水平滑動 */
+#card-scroll {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+
+}
+
+
+.img img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
