@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #070D59;
+    background-color: #2D2F37;
     font-family: 'Noto Sans TC', sans-serif;
     color: #fff;
 }
@@ -25,11 +25,24 @@ body {
 /* 導覽列 */
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #070D59;
     height: 100px;
     margin: 0 auto;
     padding: 0 50px;
+    z-index: 1;
 }
 
+.nav-list .logo img {
+    height: 55px;
+}
+
+.menu-icon,
+.user-icon {
+    display: none;
+}
 
 .navbar {
     padding: 0;
@@ -53,10 +66,13 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 
-.nav-list ul {
+.nav-list-2 {
+    display: flex;
+    flex-direction: row;
     gap: 30px;
 }
 
@@ -73,6 +89,7 @@ ul {
 
 /* Banner */
 .banner {
+    margin-top: 100px;
     position: relative;
     width: 100%;
     height: 600px;
@@ -129,38 +146,219 @@ ul {
 
 /* card */
 
+.container-fluid {
+    padding: 0;
+}
+
 .btn {
     color: #fff;
     border: none;
+    margin-bottom: 10px;
 }
 
+.card-list {
+    margin: 30px 50px;
+}
+
+.card-title {
+    padding: 6px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.shape-line {
+    width: 0%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+
+.card-title:hover .shape-line {
+    width: 90%;
+}
+
+.card-group {
+    margin-bottom: 30px;
+}
 
 /* 卡片水平滑動 */
-#card-scroll {
-    width: 100%;
+
+
+.card-scroll {
     display: flex;
     flex-direction: row;
     gap: 10px;
     overflow-x: auto;
-    scrollbar-width: none;
     scroll-behavior: smooth;
-    padding-bottom: 10px;
+    cursor: grab;
 
 }
-
 
 .img img {
     width: 350px;
     height: 200px;
-    object-fit: cover;
     border-radius: 10px;
-    overflow: hidden;
+    object-fit: cover;
 }
 
-.carousel-item img {
-    width: 350px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    overflow: hidden;
+/* 滑鼠拖動時的游標 */
+.card-scroll:active {
+    cursor: grabbing;
+}
+
+/* 隱藏滾動條 */
+.card-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.card-scroll {
+    scrollbar-width: none;
+}
+
+
+/* 頁尾 */
+footer {
+    padding: 50px;
+    color: #aaa;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social .logo {
+    margin-right: 20px;
+    width: 60px;
+    height: 80px;
+}
+
+
+/* 手機 */
+@media screen and (max-width: 767px) {
+
+
+    header {
+        height: 80px;
+        padding: 16px 20px;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .nav-list-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-list-2 div:nth-child(2) {
+        display: none;
+    }
+
+    .nav-list-2 div:nth-child(3) {
+        display: none;
+    }
+
+    .user-icon {
+        display: block;
+        color: #fff;
+    }
+
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .banner {
+        margin-top: 80px;
+    }
+
+    .banner-text {
+        top: 80%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+
+    .banner-text p {
+        padding: 0;
+    }
+
+    .banner-text button {
+        width: 100px;
+        height: 48px;
+        font-size: 1rem;
+    }
+
+    .card-list {
+        margin: 20px;
+    }
+
+    .shape-line {
+        display: none;
+    }
+
+    footer {
+        padding: 50px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .footer-links-group {
+        align-items: center;
+    }
+
 }
