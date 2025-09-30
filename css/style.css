@@ -11,8 +11,8 @@
 }
 
 body {
-    background-color: #2D2F37;
-    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #2d2f37;
+    font-family: "Noto Sans TC", sans-serif;
     color: #fff;
 }
 
@@ -28,7 +28,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #070D59;
+    background-color: #070d59;
     height: 100px;
     margin: 0 auto;
     padding: 0 50px;
@@ -69,7 +69,6 @@ ul {
     margin-bottom: 5px;
 }
 
-
 .nav-list-2 {
     display: flex;
     flex-direction: row;
@@ -93,7 +92,7 @@ ul {
     position: relative;
     width: 100%;
     height: 600px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(/img/banner.jpg) no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(./img/banner.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -115,29 +114,27 @@ ul {
     padding-bottom: 20px;
 }
 
-
 .secondary {
     margin-right: 10px;
     font-size: 1.25rem;
     padding: 8px 16px;
     border-radius: 10px;
-    border: 2px solid #070D59;
-    color: #070D59;
+    border: 2px solid #070d59;
+    color: #070d59;
 }
 
 .secondary:hover {
-    background-color: #5269A5;
+    background-color: #5269a5;
     color: #fff;
 }
 
 .primary {
     font-size: 1.25rem;
     padding: 10px 18px;
-    color: #FFF;
+    color: #fff;
     background: linear-gradient(to right top, #014cd3, #2f4bce, #424bc9, #4f4bc4, #5a4bbf, #7048bb, #8246b6, #9243b0, #ad3da6, #c3379a, #d5358d, #e3387e);
     border: none;
     border-radius: 10px;
-
 }
 
 .primary:hover {
@@ -175,7 +172,7 @@ ul {
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 }
 
 .card-title:hover .shape-line {
@@ -188,7 +185,6 @@ ul {
 
 /* 卡片水平滑動 */
 
-
 .card-scroll {
     display: flex;
     flex-direction: row;
@@ -196,7 +192,6 @@ ul {
     overflow-x: auto;
     scroll-behavior: smooth;
     cursor: grab;
-
 }
 
 .img img {
@@ -220,7 +215,6 @@ ul {
     scrollbar-width: none;
 }
 
-
 /* 頁尾 */
 footer {
     padding: 50px;
@@ -232,7 +226,6 @@ footer {
     align-items: center;
     gap: 50px;
 }
-
 
 .footer-links {
     display: flex;
@@ -272,11 +265,8 @@ footer {
     height: 80px;
 }
 
-
 /* 手機 */
 @media screen and (max-width: 767px) {
-
-
     header {
         height: 80px;
         padding: 16px 20px;
@@ -306,7 +296,6 @@ footer {
         display: block;
         color: #fff;
     }
-
 
     .menu-icon {
         display: block;
@@ -354,11 +343,9 @@ footer {
     .footer-links {
         flex-direction: column;
         gap: 10px;
-
     }
 
     .footer-links-group {
         align-items: center;
     }
-
 }
